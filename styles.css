@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      /*align-items: center; */
+      min-height: 100vh;
+      margin: 0;
+      background-color: rgb(24, 24, 24);
+  }
+  
+  .periodic-table {
+      display: grid;
+      grid-template-columns: repeat(18, 50px);
+      grid-template-rows: repeat(10, 50px);
+      gap: 10px;
+      position: absolute;
+      top: 25%;
+  }
+  
+  .content {
+    background-color: rgba(10, 10, 10, 0.6);
+    padding: 2rem;
+    border-radius: 25px;
+  }
+  
+  .title {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 55px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 50px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #ffffff, 0 0 17.5px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 37.5px #ff00de;
+    animation: float 10s ease-in-out infinite;
+  }
+  
+  .element {
+      width: 50px;
+      height: 50px;
+      background-color: #00a8ff;
+      border: none;
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.2s ease-out, background-image 0.2s ease;
+  }
+  
+  .red {
+    background-color: #fb7364;
+  }
+  
+  .blue {
+    background-color: #00a8ff;
+  }
+  
+  .green {
+    background-color: #31d431;
+  }
+  
+  .purple {
+    background-color: #d34ef5;
+  }
+  
+  .element:hover {
+      transform: scale(1.15);
+      background-image: linear-gradient(45deg, #ff00de 0%, #ffcc00 50%, #00ff7f 100%);
+      background-size: 400% 400%;
+      animation: gradient 3s linear infinite;
+  }
+  
+  .russian-roulette {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .russian-roulette:hover {
+    opacity: 75%;
+    cursor: pointer;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+  }
