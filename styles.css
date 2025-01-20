@@ -78,6 +78,15 @@
       animation: gradient 3s linear infinite;
   }
   
+  .russian-roulette {
+    top: auto;
+    left: 100%;
+  }
+
+  .russian-roulette:hover {
+    opacity: 75%;
+    cursor: pointer;
+  }
 
   @keyframes gradient {
     0% {
