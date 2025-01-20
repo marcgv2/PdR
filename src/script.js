@@ -130,6 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.style.gridColumn = element.position.x;
         button.style.gridRow = element.position.y;
         periodicTable.appendChild(button);
+        button.style.fontFamily = "Minecraft";
         button.addEventListener("click", () =>{location.href=element.url;} );
       }); 
   });
