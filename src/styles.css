@@ -75,19 +75,10 @@
       background-size: 400% 400%;
       animation: gradient 3s linear infinite;
   }
-  
-  .russian-roulette {
-    top: auto;
-    left: 100%;
-  }
 
   @font-face {
     font-family: "Minecraft";
     src: url(/fonts/MinecraftRegular-Bmg3.otf), format(otf);
-  }
-  .russian-roulette:hover {
-    opacity: 75%;
-    cursor: pointer;
   }
 
   @keyframes gradient {
