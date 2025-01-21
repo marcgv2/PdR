@@ -1,0 +1,47 @@
+body {
+    font-family: Minecraft, sans-serif;
+    margin: 20px;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  h2 {
+    color: #555;
+    margin-top: 20px;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+.danger{
+    color: red;
+    
+}
+
+.back-to-index {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+  }
+
+  .back-to-index a {
+    text-decoration: none;
+    color: #007bff; /* Blue link color */
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: black;
+  }
+
+@font-face {
+    font-family: "Minecraft";
+    src: url(/fonts/MinecraftRegular-Bmg3.otf), format(otf);
+  }
