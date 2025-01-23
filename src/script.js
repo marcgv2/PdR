@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const elements = [
-    { symbol: 'H', position: { x: 2, y: 1 }, category: 'red', url: 'https://es.wikipedia.org/wiki/Hidrogeno'},
+    { symbol: 'H', position: { x: 2, y: 1 }, category: 'red', url: '/elements_pages/h.html'},
     { symbol: 'He', position: { x: 19, y: 1 }, category: 'red', url: 'https://es.wikipedia.org/wiki/Helio' },
     { symbol: 'Li', position: { x: 2, y: 2 }, category: 'red', url: 'https://es.wikipedia.org/wiki/litio' },
     { symbol: 'Be', position: { x: 3, y: 2 }, category: 'red', url: 'https://es.wikipedia.org/wiki/berilio' },

@@ -1,0 +1,9 @@
+body {
+    font-family: Minecraft, sans-serif;
+    margin: 20px;
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(/fonts/MinecraftRegular-Bmg3.otf), format(otf);
+}
