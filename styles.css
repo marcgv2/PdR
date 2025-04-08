@@ -1,0 +1,112 @@
+/* main format */ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
+}
+
+/* top links stick to the right */
+.navbar {
+    float: right;
+}
+
+/* making them pretty */
+
+.navbar a {
+    color:whitesmoke;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color:  rgb(24, 24, 24);
+    background-color: whitesmoke;
+}
+
+/* title formatting */
+
+.title-div {
+    padding: 14px 16px;
+    padding-bottom: 5%;
+    padding-top: 50px;
+    font-size: xx-large;
+}
+
+/* making it pretty */
+
+.title:hover{
+    color: black;
+    /* blue-white gradient */ 
+    text-shadow: 0 0 50px #fff, 0 0 5px #ff05c0, 0 0 7.5px #3f01d1, 0 0 10px #ffffff, 0 0 17.5px #ffffff, 0 0 20px #ff0000, 0 0 25px #ffffff, 0 0 37.5px #ff00de;
+    animation: float  5s cubic-bezier(.68,.35,.4,.68) infinite;
+}
+
+/* MATHS SUB LINKS */
+
+/* formatting */
+.maths {
+    justify-content: center;
+    display: block;
+    font-size: xx-large;   
+}
+
+/* making it pretty */
+
+.maths a{
+    color: whitesmoke;
+    padding-top: 100px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.maths a:hover {
+    /* purple-whiteish gradient */
+    text-shadow: 0 0 50px #021061, 0 0 8px #0335a1, 0 0 8px #1a9ce8, 0 0 8px #34dcfa, 0 0 8px #90fcfb, 0 0 8px #f7fcfc;
+}
+
+/* SCIENCE SUB LINKS */
+
+/* formatting */
+.science {
+    justify-content: center;
+    display: block;
+    font-size: xx-large;
+    padding-top: 10%;
+}
+
+/* making it pretty */
+
+.science a {
+    color: whitesmoke;
+    padding-top: 100px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.science  a:hover {
+    /* green-white gradient */
+    text-shadow: 0 0 50px #256102, 0 0 7px #289c0b,0 0 7px #17bf17, 0 0 7px #17bf17, 0 0 7px #58f587, 0 0 7px #9dfcb9, 0 0 7px #ffffff;
+}
+
+/* setting the font */
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url();
+}
+
+/* setting title animation */
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

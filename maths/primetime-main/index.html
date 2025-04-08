@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="theme-color" content="#242a4f">
+  <meta property="og:title" content="Nombres primers">
+  <meta property="og:image" content="./assets/header_image.png">
+  <meta property="og:description"
+    content="Time to test Yor Skills! Prime Time is a game based on your knowledge about prime numbers. Let's see how much you know about prime numbers.">
+  <meta property="twitter:title" content="Its Prime Time!">
+  <meta name="twitter:image:alt" content="Its Prime Time!">
+  <meta property="og:site_name" content="Its Prime Time!">
+  <meta name="twitter:card" content="Its Prime Time!">
+  <meta property="twitter:image" content="./assets/header_image.png">
+  <meta property="twitter:description"
+    content="Time to test Yor Skills! Prime Time is a game based on your knowledge about prime numbers. Let's see how much you know about prime numbers.">
+  <meta name="description"
+    content="Its Prime Time! | It is a game based on your knowledge about prime numbers. Let's see how much you know about prime numbers.">
+  <meta name="keywords"
+    content="prime numbers, prime time, its prime time, arnav kumar, arnav-kr, game, web, js, html, css, maths, memory, maths game, logical game, web games, sololearn, best results, most, best, opensource">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script type="module"
+    src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3ZKE110LW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-Z3ZKE110LW');
+  </script>
+  <title>Its Prime Time!</title>
+</head>
+
+<body>
+  <div id="welcome" class="flex align-center flex-col">
+    <div class="welcome_header flex align-center flex-col justify-center">
+      <h2 style="margin-bottom: 0;">Nombres primers</h2>
+      <h3>Tria un nivell per a continuar</h3>
+    </div>
+    <div class="level_cards_wrapper w-100 flex flex-col align-center">
+      <div class="levels grid grid-layout" id="levels">
+        <div class="level" data-config="1-100" data-index="0" data-level="Easy">
+          <div class="dificulty_badge easy"></div>
+          <span class="mb-1">Fàcil</span>
+          <span class="mb-1">1 - 100</span>
+        </div>
+
+        <div class="level" data-config="100-500" data-index="0" data-level="Normal">
+          <div class="dificulty_badge normal"></div>
+          <span class="mb-1">Normal</span>
+          <span class="mb-1">100 - 500</span>
+        </div>
+
+        <div class="level" data-config="500-1000" data-index="0" data-level="Dificult">
+          <div class="dificulty_badge dificult"></div>
+          <span class="mb-1">Difícil</span>
+          <span class="mb-1">500 - 1000</span>
+        </div>
+
+        <div class="level" data-config="1000-5000" data-index="0" data-level="Hard">
+          <div class="dificulty_badge hard"></div>
+          <span class="mb-1">Molt difícil</span>
+          <span class="mb-1">1000 - 5000</span>
+        </div>
+
+        <div class="level" data-config="5000-10000" data-index="0" data-level="Extreme">
+          <div class="dificulty_badge extereme"></div>
+          <span class="mb-1">Extrem</span>
+          <span class="mb-1">5000 - 10000</span>
+        </div>
+
+        <div class="level" data-config="10000-50000" data-index="0" data-level="Insane">
+          <div class="dificulty_badge insane"></div>
+          <span class="mb-1">Impossible</span>
+          <span class="mb-1">10000 - 50000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div hidden id="app" class="w-100 flex align-center flex-col justify-start">
+    <div id="timer" class="timer fixed"></div>
+    <div class="app_wrapper w-100">
+      <!-- <nav id="app_nav" class="w-100">
+        <ul class="no_bullets flex justify-end m-0 mb-1">
+          <li id="report_question" title="Report Question!">
+            <m R class="fs-1 clr-red">warning</m>
+          </li>
+      </nav> -->
+      <div class="play_area flex align-center flex-col w-100">
+        <div class="question flex align-center flex-col w-100 mb-2" id="question">
+          <span class="mb-2 fs-1"><b>Question <span id="question_number" class="clr-blue">0</span></b></span>
+          <span class="mb-1 fw-500 fs-1">Is it prime?</span>
+          <b><span id="ques" class="clr-blue fs-1">43</span></b>
+        </div>
+        <div class="options flex flex-col w-100" id="options">
+          <button class="option option-btn correct-option" data-value="Yes" data-index="0" role="button">Yes</button>
+          <button class="option option-btn" data-value="No" data-index="1" role="button">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div hidden class="review flex flex-col align-center" id="review">
+    <div class="review_nav flex flex-start">
+      <button class="review_go_back option-btn correct-option" id="review-go_back">
+        <m R>arrow_back_ios_new</m> Back
+      </button>
+    </div>
+    <div class="review_wrapper w-100 flex flex-col">
+      <div class="review_header flex align-center flex-col">
+        <h2>Review Your Answers</h2>
+      </div>
+      <div class="reviews_container" id="reviews_container"></div>
+    </div>
+  </div>
+  <div hidden id="results">
+    <div class="results_header flex align-center flex-col justify-center">
+      <h2>Game Over!</h2>
+      <h3 class="game-level">Level: <span id="game_level" class="clr-blue"></span></h3>
+      <h3 class="total-questions">Total Questions: <span id="total_questions" class="clr-blue">10</span></h3>
+      <h3 class="correct-answers">Correct Answers: <span id="correct_answers" class="clr-green">0</span></h3>
+      <h3 class="wrong-answers">Incorrect Answers: <span id="wrong_answers" class="clr-red">0</span></h3>
+      <h3 class="unattempted-questions">Unattempted: <span id="unattempted_questions" class="clr-orange">0</span></h3>
+      <p class="ta-c fw-500" id="game_over_summary">You were <span id="score_percentage" class="clr-green">100%</span>
+        accurate.</p>
+    </div>
+    <div class="results_buttons flex flex-col align-center">
+      <button done class="option-btn w-100 review_answer_btn correct-option" id="review_answers">Review
+        Answers!</button>
+      <button done class="option-btn w-100 lets_play_btn correct-option" id="play_again">Play again!</button>
+    </div>
+  </div>
+  <div hidden id="instructions" class="instructions">
+    <div class="instructions_header flex align-center flex-col justify-center">
+      <h2>Instructions</h2>
+      <p class="ta-c fw-500">Game is Just simple, you will be given a Number. You have to tell whether its a Prime
+        Number
+        or Not.</p>
+      <p class="ta-c fw-500">Press Yes if it is a Prime Number, else Press No</p>
+    </div>
+    <div class="instructions_buttons flex flex-col align-center">
+      <button done class="option-btn w-100 lets_play_btn correct-option" id="game_start_btn">Lets Play!</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

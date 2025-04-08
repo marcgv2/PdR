@@ -1,0 +1,1 @@
+all elements are stored here no comment needed on each html each one is a copy of the one behind it with it's data and respective image.

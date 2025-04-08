@@ -1,0 +1,50 @@
+/* main formatting */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
+}
+
+/* title formatting */
+.title {
+    padding: 14px 16px;
+    padding-bottom: 5%;
+    padding-top: 50px;
+}
+
+/* stick start link to top right */
+.navbar {
+    float: right;
+}
+
+/* making it pretty */
+.navbar a {
+    color:whitesmoke;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color:  rgb(24, 24, 24);
+    background-color: whitesmoke;
+}
+
+/* game link formatting */
+
+.game {
+    justify-content: center;
+    display: block;
+    font-size: xx-large;   
+}
+
+/* making it pretty */
+
+.game a{
+    color: whitesmoke;
+    padding-top: 100px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
