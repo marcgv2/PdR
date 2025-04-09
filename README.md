@@ -24,4 +24,4 @@ For full licensing details, refer to the [LICENSE](https://www.gnu.org/licenses/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/marcgv2/RP.git
+   git clone https://github.com/marcgv2/PdR.git
