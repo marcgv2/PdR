@@ -1,8 +1,15 @@
 # PdR - 4th of ESO Research Project
 
+> ⚠️ **Important Note**: All content in this project is written in **Catalan**, except for comments in the code and notes (e.g., `.txt` files), which are written in **English**.
+
 ## About This Project
 
-Welcome to the **RP** project! This repository contains the work I developed as part of my **4th of ESO (Educación Secundaria Obligatoria)** research project. The aim of this project is to explore, learn, and showcase my skills and creativity. As the initial version of the project, it represents my research and efforts during this academic milestone.
+Welcome to the **PdR** project! This repository contains the work I developed as part of my **4th of ESO (Educación Secundaria Obligatoria)** research project. The aim of this project is to explore, learn, and showcase my skills and creativity. As the initial version of the project, it represents my research and efforts during this academic milestone.
+
+### Future Expansion
+Although this project was initially created for my research project, I plan to expand and improve it further in the future. Stay tuned for upcoming updates and features!
+
+---
 
 ## Usage and Licensing
 
