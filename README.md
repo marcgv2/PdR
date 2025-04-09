@@ -1,6 +1,6 @@
 # PdR - 4th of ESO Research Project
 
-> ⚠️ **Important Note**: All content in this project is written in **Catalan**, except for comments in the code and notes (e.g., `.txt` files), which are written in **English**.
+> ⚠️ **Important Note**: All content in this project is written in **Catalan**, except for comments in the code, some folders and notes (e.g., `.txt` files), which are written in **English**.
 
 ## About This Project
 
